@@ -123,10 +123,10 @@
                             DC COMICS
                         </h4>
                         <ul>
-                            @foreach ($dcComics as $dc)
+                            @foreach ($dcComics as $dcc)
                             <li v-for="elem in dcComics">
-                                <a href="{{$dc['href']}}">
-                                    {{$dc['link']}}
+                                <a href="{{$dcc['href']}}">
+                                    {{$dcc['link']}}
                                 </a>
                             </li>
                             @endforeach
@@ -149,10 +149,10 @@
                             DC
                         </h4>
                         <ul>
-                            @foreach ($dc as $dc)
+                            @foreach ($dc as $cd)
                             <li v-for="elem in dc">
-                                <a href="{{$dc['href']}}">
-                                    {{$dc['link']}}
+                                <a href="{{$cd['href']}}">
+                                    {{$cd['link']}}
                                 </a>
                             </li>
                             @endforeach
@@ -169,6 +169,7 @@
                                     {{$sit['link']}}
                                 </a>
                             </li>
+                            @endforeach
                         </ul>
                     </div>
                     
@@ -193,7 +194,7 @@
                             </h4>
                             <ul>
                                 <li>
-                                    <img src="../../../public/img/footer-facebook.png" alt="">
+                                    <img src="/img/footer-facebook.png" alt="">
                                 </li>
                                 <li>
                                     <img src="/img/footer-periscope.png" alt="">
@@ -219,3 +220,4 @@
             </div>
         </section>
 </footer>
+
