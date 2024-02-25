@@ -44,13 +44,14 @@ $navBar =
         ],
     ];
 
+
 @endphp
 
 <header>
     <div class="container">
             <div class="nav-bar">
             <section>
-                <img src="/resources/img/dc-logo.png" alt="logodc">
+                <img src="{{asset('/img/dc-logo.png')}}" alt="logodc">
             </section>
             <section>
                 
