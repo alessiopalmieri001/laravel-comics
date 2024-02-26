@@ -56,13 +56,14 @@ $navBar =
             <section>
                 
                 <ul>
-                @foreach ($navBar as $nav)
+                    @foreach ($navBar as $nav)
                     <li>
                         <a href="{{$nav['href']}}">
                             {{$nav['link']}}
                         </a>
                     </li>
                     @endforeach
+                    
                 </ul>
                 
             </section>
