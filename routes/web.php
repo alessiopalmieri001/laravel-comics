@@ -14,12 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-
+    //con la funzione confing prendo il l'array del file php comics
     $comics = config('comics');
-    dd($comics);
+    //dd($comics);
 
 
-    return view('welcome');
+    return view('welcome', [
+        'comics' => $comics,
+    ]);
+
     //return view('welcome', compact('firstName', 'lastName'));
 });
 

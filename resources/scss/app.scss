@@ -4,4 +4,95 @@
 
 @import "./partials/footer.scss";
 
+@import "./partials/mixins.scss";
 
+
+@import "./partials/variables.scss";
+
+.single-product{
+    width: calc((100% - 40px) / 6);
+    height: 200px;
+    padding: 20px;
+    margin-top: 20px;
+    > div{
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+        
+
+    }
+    > h2{
+        color: white;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+}
+
+.container{
+    @include myContainer
+}
+.my-main{
+    background-color: $primary-color;
+    
+    .jumbotron{
+        background-image: url('/img/jumbotron.jpg');
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        
+
+        .generalButton{
+            @include myButton;
+            position: absolute;
+            bottom: -20px;
+            
+        }
+    }
+    > .container{
+        height: 600px;
+        > .seriesContainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            > .button-main{
+                @include myButton;
+                margin-top: 70px;
+            }
+        }
+    }
+    
+}
+
+
+.my-main-2{
+    background-color: $terziary-color;
+    > .container{
+
+        > .row{
+            display: flex;
+            > .col-1-5{
+                width: calc(100% / 5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+
+                img{
+                    height: 40%;
+                    padding: 20px;
+                }
+            }   
+
+            
+        }
+        
+    }
+}
