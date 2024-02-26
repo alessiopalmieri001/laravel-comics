@@ -3,9 +3,32 @@
 @section('page-title', 'Home')
 
 @section('homePageMainContent')
+@php
+$Object =
+[
+    [
+        'immagine'=> '/img/buy-comics-digital-comics.png',
+        'name' => 'DIGITAL COMICS'
+    ],
+    [
+        'immagine'=> '/img/buy-comics-merchandise.png',
+        'name' => 'DC MERCHANDISE'
+    ],
+    [
+        'immagine'=> '/img/buy-comics-subscriptions.png',
+        'name' => 'SUBSCRIPTION'
+    ],
+    [
+        'immagine'=> '/img/buy-comics-shop-locator.png',
+        'name' => 'COMINC SHOP LOCATOR'
+    ],
+    [
+        'immagine'=> '/img/buy-dc-power-visa.svg',
+        'name' => 'DC POWER VISA'
+    ],
 
-
-
+];
+@endphp
 <!-- <h1>
     main
 </h1>
@@ -46,13 +69,22 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="my-main-2">
+        <section class="my-main-2">
             <div class="container">
                 <div class="row">
-                    
+                    @foreach ($Object as $obj)
+                    <div class="col-1-5">
+                        <div>
+                            <img src="{{$obj['immagine']}}" alt="{{$obj['name']}}">
+                        </div>
+                        <div>
+                            {{$obj['name']}}
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
                 
             </div>
-        </section> -->
+        </section>
 
 @endsection
