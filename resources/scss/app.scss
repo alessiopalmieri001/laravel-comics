@@ -9,6 +9,13 @@
 
 @import "./partials/variables.scss";
 
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
 .single-product{
     width: calc((100% - 40px) / 6);
     height: 200px;

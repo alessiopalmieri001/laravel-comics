@@ -4,30 +4,30 @@
 
 @section('homePageMainContent')
 @php
-$Object =
-[
+    $Object =
     [
-        'immagine'=> '/img/buy-comics-digital-comics.png',
-        'name' => 'DIGITAL COMICS'
-    ],
-    [
-        'immagine'=> '/img/buy-comics-merchandise.png',
-        'name' => 'DC MERCHANDISE'
-    ],
-    [
-        'immagine'=> '/img/buy-comics-subscriptions.png',
-        'name' => 'SUBSCRIPTION'
-    ],
-    [
-        'immagine'=> '/img/buy-comics-shop-locator.png',
-        'name' => 'COMINC SHOP LOCATOR'
-    ],
-    [
-        'immagine'=> '/img/buy-dc-power-visa.svg',
-        'name' => 'DC POWER VISA'
-    ],
+        [
+            'immagine'=> '/img/buy-comics-digital-comics.png',
+            'name' => 'DIGITAL COMICS'
+        ],
+        [
+            'immagine'=> '/img/buy-comics-merchandise.png',
+            'name' => 'DC MERCHANDISE'
+        ],
+        [
+            'immagine'=> '/img/buy-comics-subscriptions.png',
+            'name' => 'SUBSCRIPTION'
+        ],
+        [
+            'immagine'=> '/img/buy-comics-shop-locator.png',
+            'name' => 'COMINC SHOP LOCATOR'
+        ],
+        [
+            'immagine'=> '/img/buy-dc-power-visa.svg',
+            'name' => 'DC POWER VISA'
+        ],
 
-];
+    ];
 @endphp
 <!-- <h1>
     main
